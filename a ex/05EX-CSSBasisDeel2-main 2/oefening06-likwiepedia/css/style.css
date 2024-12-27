@@ -1,0 +1,72 @@
+body {
+  font-family: monospace;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+table,
+td,
+th {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+  text-align: center;
+}
+
+/*tweede rij prize pool geel*/
+table:first-of-type tr:nth-child(2) {
+  background-color: yellow;
+}
+
+/*derde rij prize pool grijs*/
+table:first-of-type tr:nth-child(3) {
+  background-color: gray;
+}
+
+/*vierde en vijfde rij prize pool bruin*/
+table:first-of-type tr:nth-child(4), table:first-of-type tr:nth-child(5) {
+  background-color: brown;
+}
+
+
+/*participants 1e cel fluogroen*/
+table:nth-of-type(2) tr th:first-child {
+  background-color: greenyellow;
+}
+
+
+/*participants 2e cel blauw-paars*/
+table:nth-of-type(2) th:nth-child(2) {
+  background-color: purple;
+}
+
+/*participants 3e cel roos*/
+table:nth-of-type(2) tr th:nth-child(3) {
+  background-color: pink;
+}
+
+/*distribution 2e kolom fluo-groen*/
+
+
+/*distribution 3e kolom blauw-paars*/
+/*distribution 4e kolom roos */
+table:nth-of-type(3) th:last-child, table:nth-of-type(3) td:last-child {
+  background-color: pink;
+}
+
+table:last-of-type th:nth-last-child(2),
+table:last-of-type td:nth-last-child(2) {
+  background-color: lightsteelblue;
+}
+
+table:last-of-type th:nth-last-child(3),
+table:last-of-type td:nth-last-child(3) {
+  background-color: palegreen;
+}
+
+/* De cellen in de eerste kolom opnieuw wit maken */
+table:last-of-type td:first-child {
+  background-color: white;
+}

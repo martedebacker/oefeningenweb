@@ -1,0 +1,8 @@
+/*opmaak tabel voor randen:*/
+table {
+    border-collapse: collapse;
+}
+
+table, td {
+    border: 1px solid black;
+}

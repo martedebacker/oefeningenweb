@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: cursive;
+}
+
+.container {
+  width: 400px;
+  height: 250px;
+  padding: 1px 20px;
+  background-color: lightsteelblue;
+}
+
+.container p {
+  animation-name: moving-text;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-play-state: paused;
+}
+
+.container:hover p {
+  animation-play-state: running;
+}
+
+@keyframes moving-text {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  25% {
+    transform: translate(100px, 0);
+  }
+
+  75% {
+    transform: translate(100px, 100px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
